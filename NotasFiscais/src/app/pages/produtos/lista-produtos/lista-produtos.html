@@ -6,16 +6,16 @@
   </a>
 </div>
 
-@if (carregando) {
+@if (carregando()) {
   <div style="display: flex; justify-content: center; padding: 48px;">
     <mat-spinner />
   </div>
-} @else if (produtos.length === 0) {
+} @else if (produtos().length === 0) {
   <p style="text-align: center; color: #888; padding: 48px;">
     Nenhum produto cadastrado. Clique em "Novo Produto" para começar.
   </p>
 } @else {
-  <table mat-table [dataSource]="produtos" style="width: 100%;">
+  <table mat-table [dataSource]="produtos()" style="width: 100%;">
 
     <ng-container matColumnDef="codigo">
       <th mat-header-cell *matHeaderCellDef>Código</th>

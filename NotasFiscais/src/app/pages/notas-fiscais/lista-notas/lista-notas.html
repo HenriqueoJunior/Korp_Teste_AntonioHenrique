@@ -6,16 +6,16 @@
   </a>
 </div>
 
-@if (carregando) {
+@if (carregando()) {
   <div style="display: flex; justify-content: center; padding: 48px;">
     <mat-spinner />
   </div>
-} @else if (notas.length === 0) {
+} @else if (notas().length === 0) {
   <p style="text-align: center; color: #888; padding: 48px;">
     Nenhuma nota fiscal cadastrada. Clique em "Nova Nota" para começar.
   </p>
 } @else {
-  <table mat-table [dataSource]="notas" style="width: 100%;">
+  <table mat-table [dataSource]="notas()" style="width: 100%;">
 
     <ng-container matColumnDef="numero">
       <th mat-header-cell *matHeaderCellDef>Número</th>

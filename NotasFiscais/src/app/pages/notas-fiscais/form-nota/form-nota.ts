@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, signal } from '@angular/core';
 import { Router } from '@angular/router';
 import { ReactiveFormsModule, FormBuilder, FormGroup, FormArray, Validators } from '@angular/forms';
 import { CommonModule } from '@angular/common';
@@ -31,9 +31,9 @@ import { Produto } from '../../../models/produto';
 })
 export class FormNota implements OnInit {
   form: FormGroup;
-  produtos: Produto[] = [];
-  carregando = true;
-  salvando = false;
+  produtos = signal<Produto[]>([]);
+  carregando = signal(true);
+  salvando = signal(false);
 
   constructor(
     private fb: FormBuilder,
@@ -50,13 +50,13 @@ export class FormNota implements OnInit {
   ngOnInit(): void {
     this.produtoService.listar().subscribe({
       next: (dados) => {
-        this.produtos = dados;
-        this.carregando = false;
+        this.produtos.set(dados);
+        this.carregando.set(false);
         this.adicionarItem();
       },
       error: () => {
         this.snackBar.open('Erro ao carregar produtos. Verifique se o serviço de estoque está disponível.', 'Fechar', { duration: 4000 });
-        this.carregando = false;
+        this.carregando.set(false);
       }
     });
   }
@@ -80,7 +80,7 @@ export class FormNota implements OnInit {
   salvar(): void {
     if (this.form.invalid || this.itens.length === 0) return;
 
-    this.salvando = true;
+    this.salvando.set(true);
     const dto = this.form.value;
 
     this.notaFiscalService.criar(dto).subscribe({
@@ -90,16 +90,12 @@ export class FormNota implements OnInit {
       },
       error: () => {
         this.snackBar.open('Erro ao criar nota fiscal.', 'Fechar', { duration: 3000 });
-        this.salvando = false;
+        this.salvando.set(false);
       }
     });
   }
 
   voltar(): void {
     this.router.navigate(['/notas-fiscais']);
-  }
-
-  nomeProduto(id: string): string {
-    return this.produtos.find(p => p.id === id)?.descricao ?? '';
   }
 }

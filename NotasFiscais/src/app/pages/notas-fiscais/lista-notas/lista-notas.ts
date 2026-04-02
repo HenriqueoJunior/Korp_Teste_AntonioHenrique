@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { MatTableModule } from '@angular/material/table';
@@ -26,8 +26,8 @@ import { NotaFiscal } from '../../../models/nota-fiscal';
   styleUrl: './lista-notas.scss'
 })
 export class ListaNotas implements OnInit {
-  notas: NotaFiscal[] = [];
-  carregando = true;
+  notas = signal<NotaFiscal[]>([]);
+  carregando = signal(true);
   colunas = ['numero', 'status', 'itens', 'dataCriacao', 'acoes'];
 
   constructor(
@@ -40,15 +40,15 @@ export class ListaNotas implements OnInit {
   }
 
   carregar(): void {
-    this.carregando = true;
+    this.carregando.set(true);
     this.notaFiscalService.listar().subscribe({
       next: (dados) => {
-        this.notas = dados;
-        this.carregando = false;
+        this.notas.set(dados);
+        this.carregando.set(false);
       },
       error: () => {
-        this.snackBar.open('Erro ao carregar notas fiscais. Verifique se o serviço está disponível.', 'Fechar', { duration: 4000 });
-        this.carregando = false;
+        this.snackBar.open('Erro ao carregar notas fiscais.', 'Fechar', { duration: 4000 });
+        this.carregando.set(false);
       }
     });
   }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { MatTableModule } from '@angular/material/table';
@@ -24,8 +24,8 @@ import { Produto } from '../../../models/produto';
   styleUrl: './lista-produtos.scss'
 })
 export class ListaProdutos implements OnInit {
-  produtos: Produto[] = [];
-  carregando = true;
+  produtos = signal<Produto[]>([]);
+  carregando = signal(true);
   colunas = ['codigo', 'descricao', 'saldo', 'acoes'];
 
   constructor(
@@ -38,15 +38,15 @@ export class ListaProdutos implements OnInit {
   }
 
   carregar(): void {
-    this.carregando = true;
+    this.carregando.set(true);
     this.produtoService.listar().subscribe({
       next: (dados) => {
-        this.produtos = dados;
-        this.carregando = false;
+        this.produtos.set(dados);
+        this.carregando.set(false);
       },
       error: () => {
         this.snackBar.open('Erro ao carregar produtos. Verifique se o serviço está disponível.', 'Fechar', { duration: 4000 });
-        this.carregando = false;
+        this.carregando.set(false);
       }
     });
   }

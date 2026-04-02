@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, signal } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button';
@@ -25,9 +25,9 @@ import { NotaFiscal } from '../../../models/nota-fiscal';
   styleUrl: './detalhe-nota.scss'
 })
 export class DetalheNota implements OnInit {
-  nota: NotaFiscal | null = null;
-  carregando = true;
-  imprimindo = false;
+  nota = signal<NotaFiscal | null>(null);
+  carregando = signal(true);
+  imprimindo = signal(false);
   colunas = ['codigo', 'descricao', 'quantidade'];
 
   constructor(
@@ -46,8 +46,8 @@ export class DetalheNota implements OnInit {
 
     this.notaFiscalService.buscarPorId(id).subscribe({
       next: (nota) => {
-        this.nota = nota;
-        this.carregando = false;
+        this.nota.set(nota);
+        this.carregando.set(false);
       },
       error: () => {
         this.snackBar.open('Erro ao carregar nota fiscal.', 'Fechar', { duration: 3000 });
@@ -57,18 +57,19 @@ export class DetalheNota implements OnInit {
   }
 
   imprimir(): void {
-    if (!this.nota || this.nota.status !== 'Aberta') return;
+    const nota = this.nota();
+    if (!nota || nota.status !== 'Aberta') return;
 
-    this.imprimindo = true;
-    this.notaFiscalService.imprimir(this.nota.id).subscribe({
+    this.imprimindo.set(true);
+    this.notaFiscalService.imprimir(nota.id).subscribe({
       next: (notaAtualizada) => {
-        this.nota = notaAtualizada;
-        this.imprimindo = false;
+        this.nota.set(notaAtualizada);
+        this.imprimindo.set(false);
         this.snackBar.open('Nota fiscal impressa com sucesso!', 'Fechar', { duration: 3000 });
       },
       error: () => {
         this.snackBar.open('Erro ao imprimir nota. Verifique se o serviço de estoque está disponível.', 'Fechar', { duration: 4000 });
-        this.imprimindo = false;
+        this.imprimindo.set(false);
       }
     });
   }

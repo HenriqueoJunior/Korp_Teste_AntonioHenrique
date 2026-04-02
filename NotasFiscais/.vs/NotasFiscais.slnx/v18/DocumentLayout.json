@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Trabalho\\Korp_Teste_AntonioHenrique\\NotasFiscais\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A7C31784-699E-4FAC-857A-685E24095368}|Faturamento.API\\Faturamento.API.csproj|c:\\trabalho\\korp_teste_antoniohenrique\\notasfiscais\\faturamento.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7C31784-699E-4FAC-857A-685E24095368}|Faturamento.API\\Faturamento.API.csproj|solutionrelative:faturamento.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7C31784-699E-4FAC-857A-685E24095368}|Faturamento.API\\Faturamento.API.csproj|c:\\trabalho\\korp_teste_antoniohenrique\\notasfiscais\\faturamento.api\\models\\notafiscal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7C31784-699E-4FAC-857A-685E24095368}|Faturamento.API\\Faturamento.API.csproj|solutionrelative:faturamento.api\\models\\notafiscal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7C31784-699E-4FAC-857A-685E24095368}|Faturamento.API\\Faturamento.API.csproj|c:\\trabalho\\korp_teste_antoniohenrique\\notasfiscais\\faturamento.api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7C31784-699E-4FAC-857A-685E24095368}|Faturamento.API\\Faturamento.API.csproj|solutionrelative:faturamento.api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7C31784-699E-4FAC-857A-685E24095368}|Faturamento.API\\Faturamento.API.csproj|c:\\trabalho\\korp_teste_antoniohenrique\\notasfiscais\\faturamento.api\\dtos\\notafiscaldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7C31784-699E-4FAC-857A-685E24095368}|Faturamento.API\\Faturamento.API.csproj|solutionrelative:faturamento.api\\dtos\\notafiscaldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7C31784-699E-4FAC-857A-685E24095368}|Faturamento.API\\Faturamento.API.csproj|c:\\trabalho\\korp_teste_antoniohenrique\\notasfiscais\\faturamento.api\\services\\notafiscalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7C31784-699E-4FAC-857A-685E24095368}|Faturamento.API\\Faturamento.API.csproj|solutionrelative:faturamento.api\\services\\notafiscalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Trabalho\\Korp_Teste_AntonioHenrique\\NotasFiscais\\Faturamento.API\\Program.cs",
+              "RelativeDocumentMoniker": "Faturamento.API\\Program.cs",
+              "ToolTip": "C:\\Trabalho\\Korp_Teste_AntonioHenrique\\NotasFiscais\\Faturamento.API\\Program.cs",
+              "RelativeToolTip": "Faturamento.API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T06:15:27.753Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Trabalho\\Korp_Teste_AntonioHenrique\\NotasFiscais\\Faturamento.API\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Faturamento.API\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Trabalho\\Korp_Teste_AntonioHenrique\\NotasFiscais\\Faturamento.API\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Faturamento.API\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T06:11:05.336Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NotaFiscal.cs",
+              "DocumentMoniker": "C:\\Trabalho\\Korp_Teste_AntonioHenrique\\NotasFiscais\\Faturamento.API\\Models\\NotaFiscal.cs",
+              "RelativeDocumentMoniker": "Faturamento.API\\Models\\NotaFiscal.cs",
+              "ToolTip": "C:\\Trabalho\\Korp_Teste_AntonioHenrique\\NotasFiscais\\Faturamento.API\\Models\\NotaFiscal.cs",
+              "RelativeToolTip": "Faturamento.API\\Models\\NotaFiscal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBAAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T06:09:48.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NotaFiscalDTO.cs",
+              "DocumentMoniker": "C:\\Trabalho\\Korp_Teste_AntonioHenrique\\NotasFiscais\\Faturamento.API\\DTOs\\NotaFiscalDTO.cs",
+              "RelativeDocumentMoniker": "Faturamento.API\\DTOs\\NotaFiscalDTO.cs",
+              "ToolTip": "C:\\Trabalho\\Korp_Teste_AntonioHenrique\\NotasFiscais\\Faturamento.API\\DTOs\\NotaFiscalDTO.cs",
+              "RelativeToolTip": "Faturamento.API\\DTOs\\NotaFiscalDTO.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwAYAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T06:10:17.738Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NotaFiscalService.cs",
+              "DocumentMoniker": "C:\\Trabalho\\Korp_Teste_AntonioHenrique\\NotasFiscais\\Faturamento.API\\Services\\NotaFiscalService.cs",
+              "RelativeDocumentMoniker": "Faturamento.API\\Services\\NotaFiscalService.cs",
+              "ToolTip": "C:\\Trabalho\\Korp_Teste_AntonioHenrique\\NotasFiscais\\Faturamento.API\\Services\\NotaFiscalService.cs",
+              "RelativeToolTip": "Faturamento.API\\Services\\NotaFiscalService.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAcwEwAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T06:07:40.079Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

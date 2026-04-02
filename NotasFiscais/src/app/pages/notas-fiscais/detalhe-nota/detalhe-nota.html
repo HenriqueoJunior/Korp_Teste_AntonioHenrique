@@ -1,25 +1,25 @@
-@if (carregando) {
+@if (carregando()) {
   <div style="display: flex; justify-content: center; padding: 48px;">
     <mat-spinner />
   </div>
-} @else if (nota) {
+} @else if (nota()) {
   <div style="max-width: 720px;">
 
     <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 24px;">
       <button mat-icon-button (click)="voltar()">
         <mat-icon>arrow_back</mat-icon>
       </button>
-      <h2 style="margin: 0;">Nota Fiscal Nº {{ nota.numero }}</h2>
-      <mat-chip [color]="nota.status === 'Aberta' ? 'primary' : 'warn'" highlighted style="margin-left: 8px;">
-        {{ nota.status }}
+      <h2 style="margin: 0;">Nota Fiscal Nº {{ nota()!.numero }}</h2>
+      <mat-chip [color]="nota()!.status === 'Aberta' ? 'primary' : 'warn'" highlighted style="margin-left: 8px;">
+        {{ nota()!.status }}
       </mat-chip>
     </div>
 
     <p style="color: #888; margin-bottom: 24px;">
-      Criada em {{ nota.dataCriacao | date:'dd/MM/yyyy HH:mm' }}
+      Criada em {{ nota()!.dataCriacao | date:'dd/MM/yyyy HH:mm' }}
     </p>
 
-    <table mat-table [dataSource]="nota.itens" style="width: 100%; margin-bottom: 24px;">
+    <table mat-table [dataSource]="nota()!.itens" style="width: 100%; margin-bottom: 24px;">
 
       <ng-container matColumnDef="codigo">
         <th mat-header-cell *matHeaderCellDef>Código</th>
@@ -41,12 +41,12 @@
 
     </table>
 
-    @if (nota.status === 'Aberta') {
+    @if (nota()!.status === 'Aberta') {
       <button mat-raised-button color="primary"
               (click)="imprimir()"
-              [disabled]="imprimindo"
+              [disabled]="imprimindo()"
               style="min-width: 180px;">
-        @if (imprimindo) {
+        @if (imprimindo()) {
           <mat-spinner diameter="20" style="display: inline-block; margin-right: 8px;" />
           Processando...
         } @else {
