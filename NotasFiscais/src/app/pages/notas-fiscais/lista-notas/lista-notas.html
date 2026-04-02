@@ -1,1 +1,57 @@
-<p>lista-notas works!</p>
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
+  <h2 style="margin: 0;">Notas Fiscais</h2>
+  <a mat-raised-button color="primary" routerLink="/notas-fiscais/nova">
+    <mat-icon>add</mat-icon>
+    Nova Nota
+  </a>
+</div>
+
+@if (carregando) {
+  <div style="display: flex; justify-content: center; padding: 48px;">
+    <mat-spinner />
+  </div>
+} @else if (notas.length === 0) {
+  <p style="text-align: center; color: #888; padding: 48px;">
+    Nenhuma nota fiscal cadastrada. Clique em "Nova Nota" para começar.
+  </p>
+} @else {
+  <table mat-table [dataSource]="notas" style="width: 100%;">
+
+    <ng-container matColumnDef="numero">
+      <th mat-header-cell *matHeaderCellDef>Número</th>
+      <td mat-cell *matCellDef="let n">{{ n.numero }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="status">
+      <th mat-header-cell *matHeaderCellDef>Status</th>
+      <td mat-cell *matCellDef="let n">
+        <mat-chip [color]="n.status === 'Aberta' ? 'primary' : 'warn'" highlighted>
+          {{ n.status }}
+        </mat-chip>
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="itens">
+      <th mat-header-cell *matHeaderCellDef>Itens</th>
+      <td mat-cell *matCellDef="let n">{{ n.itens.length }} produto(s)</td>
+    </ng-container>
+
+    <ng-container matColumnDef="dataCriacao">
+      <th mat-header-cell *matHeaderCellDef>Data</th>
+      <td mat-cell *matCellDef="let n">{{ n.dataCriacao | date:'dd/MM/yyyy HH:mm' }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="acoes">
+      <th mat-header-cell *matHeaderCellDef>Ações</th>
+      <td mat-cell *matCellDef="let n">
+        <a mat-icon-button [routerLink]="['/notas-fiscais', n.id]">
+          <mat-icon>visibility</mat-icon>
+        </a>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="colunas"></tr>
+    <tr mat-row *matRowDef="let row; columns: colunas;"></tr>
+
+  </table>
+}

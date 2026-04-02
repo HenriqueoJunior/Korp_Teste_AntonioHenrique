@@ -1,1 +1,75 @@
-<p>form-nota works!</p>
+<div style="max-width: 640px;">
+  <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 24px;">
+    <button mat-icon-button (click)="voltar()">
+      <mat-icon>arrow_back</mat-icon>
+    </button>
+    <h2 style="margin: 0;">Nova Nota Fiscal</h2>
+  </div>
+
+  @if (carregando) {
+    <div style="display: flex; justify-content: center; padding: 48px;">
+      <mat-spinner />
+    </div>
+  } @else {
+    <form [formGroup]="form">
+
+      <div style="margin-bottom: 16px;">
+        <h3 style="margin: 0 0 16px;">Produtos</h3>
+
+        @for (item of itens.controls; track $index) {
+          <div style="display: flex; gap: 12px; align-items: flex-start; margin-bottom: 12px;">
+
+            <mat-form-field appearance="outline" style="flex: 2;">
+              <mat-label>Produto</mat-label>
+              <mat-select [formControl]="$any(item.get('produtoId'))">
+                @for (produto of produtos; track produto.id) {
+                  <mat-option [value]="produto.id">
+                    {{ produto.codigo }} - {{ produto.descricao }} (Saldo: {{ produto.saldo }})
+                  </mat-option>
+                }
+              </mat-select>
+              @if (item.get('produtoId')?.hasError('required')) {
+                <mat-error>Selecione um produto</mat-error>
+              }
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" style="flex: 1;">
+              <mat-label>Quantidade</mat-label>
+              <input matInput type="number" [formControl]="$any(item.get('quantidade'))" min="1" />
+              @if (item.get('quantidade')?.hasError('min')) {
+                <mat-error>Mínimo 1</mat-error>
+              }
+            </mat-form-field>
+
+            @if (itens.length > 1) {
+              <button mat-icon-button color="warn"
+                      style="margin-top: 8px;"
+                      (click)="removerItem($index)">
+                <mat-icon>delete</mat-icon>
+              </button>
+            }
+          </div>
+        }
+
+        <button mat-stroked-button (click)="adicionarItem()">
+          <mat-icon>add</mat-icon>
+          Adicionar Produto
+        </button>
+      </div>
+
+      <div style="display: flex; gap: 12px; margin-top: 24px;">
+        <button mat-stroked-button (click)="voltar()">Cancelar</button>
+        <button mat-raised-button color="primary"
+                (click)="salvar()"
+                [disabled]="form.invalid || itens.length === 0 || salvando">
+          @if (salvando) {
+            <mat-spinner diameter="20" />
+          } @else {
+            Criar Nota Fiscal
+          }
+        </button>
+      </div>
+
+    </form>
+  }
+</div>
