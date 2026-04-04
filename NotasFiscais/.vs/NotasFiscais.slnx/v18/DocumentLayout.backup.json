@@ -3,20 +3,36 @@
   "WorkspaceRootPath": "C:\\Trabalho\\Korp_Teste_AntonioHenrique\\NotasFiscais\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A7C31784-699E-4FAC-857A-685E24095368}|Faturamento.API\\Faturamento.API.csproj|c:\\trabalho\\korp_teste_antoniohenrique\\notasfiscais\\faturamento.api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7C31784-699E-4FAC-857A-685E24095368}|Faturamento.API\\Faturamento.API.csproj|solutionrelative:faturamento.api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F5471D68-728C-61E2-BB8D-03AAB592409C}|Faturamento.API\\Faturamento.API.csproj|c:\\trabalho\\korp_teste_antoniohenrique\\notasfiscais\\faturamento.api\\models\\notafiscal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5471D68-728C-61E2-BB8D-03AAB592409C}|Faturamento.API\\Faturamento.API.csproj|solutionrelative:faturamento.api\\models\\notafiscal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A7C31784-699E-4FAC-857A-685E24095368}|Faturamento.API\\Faturamento.API.csproj|c:\\trabalho\\korp_teste_antoniohenrique\\notasfiscais\\faturamento.api\\models\\notafiscal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7C31784-699E-4FAC-857A-685E24095368}|Faturamento.API\\Faturamento.API.csproj|solutionrelative:faturamento.api\\models\\notafiscal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F5471D68-728C-61E2-BB8D-03AAB592409C}|Faturamento.API\\Faturamento.API.csproj|c:\\trabalho\\korp_teste_antoniohenrique\\notasfiscais\\faturamento.api\\dtos\\notafiscaldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5471D68-728C-61E2-BB8D-03AAB592409C}|Faturamento.API\\Faturamento.API.csproj|solutionrelative:faturamento.api\\dtos\\notafiscaldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A7C31784-699E-4FAC-857A-685E24095368}|Faturamento.API\\Faturamento.API.csproj|c:\\trabalho\\korp_teste_antoniohenrique\\notasfiscais\\faturamento.api\\dtos\\notafiscaldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7C31784-699E-4FAC-857A-685E24095368}|Faturamento.API\\Faturamento.API.csproj|solutionrelative:faturamento.api\\dtos\\notafiscaldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F5471D68-728C-61E2-BB8D-03AAB592409C}|Faturamento.API\\Faturamento.API.csproj|c:\\trabalho\\korp_teste_antoniohenrique\\notasfiscais\\faturamento.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5471D68-728C-61E2-BB8D-03AAB592409C}|Faturamento.API\\Faturamento.API.csproj|solutionrelative:faturamento.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A7C31784-699E-4FAC-857A-685E24095368}|Faturamento.API\\Faturamento.API.csproj|c:\\trabalho\\korp_teste_antoniohenrique\\notasfiscais\\faturamento.api\\services\\notafiscalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7C31784-699E-4FAC-857A-685E24095368}|Faturamento.API\\Faturamento.API.csproj|solutionrelative:faturamento.api\\services\\notafiscalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{33E53E52-87B2-567D-7E78-06C6FB4BABB3}|Estoque.API\\Estoque.API.csproj|c:\\trabalho\\korp_teste_antoniohenrique\\notasfiscais\\estoque.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33E53E52-87B2-567D-7E78-06C6FB4BABB3}|Estoque.API\\Estoque.API.csproj|solutionrelative:estoque.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33E53E52-87B2-567D-7E78-06C6FB4BABB3}|Estoque.API\\Estoque.API.csproj|c:\\trabalho\\korp_teste_antoniohenrique\\notasfiscais\\estoque.api\\dtos\\produtosdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33E53E52-87B2-567D-7E78-06C6FB4BABB3}|Estoque.API\\Estoque.API.csproj|solutionrelative:estoque.api\\dtos\\produtosdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5471D68-728C-61E2-BB8D-03AAB592409C}|Faturamento.API\\Faturamento.API.csproj|c:\\trabalho\\korp_teste_antoniohenrique\\notasfiscais\\faturamento.api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5471D68-728C-61E2-BB8D-03AAB592409C}|Faturamento.API\\Faturamento.API.csproj|solutionrelative:faturamento.api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5471D68-728C-61E2-BB8D-03AAB592409C}|Faturamento.API\\Faturamento.API.csproj|c:\\trabalho\\korp_teste_antoniohenrique\\notasfiscais\\faturamento.api\\services\\notafiscalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5471D68-728C-61E2-BB8D-03AAB592409C}|Faturamento.API\\Faturamento.API.csproj|solutionrelative:faturamento.api\\services\\notafiscalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33E53E52-87B2-567D-7E78-06C6FB4BABB3}|Estoque.API\\Estoque.API.csproj|c:\\trabalho\\korp_teste_antoniohenrique\\notasfiscais\\estoque.api\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33E53E52-87B2-567D-7E78-06C6FB4BABB3}|Estoque.API\\Estoque.API.csproj|solutionrelative:estoque.api\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,56 +42,108 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
+              "Title": "Produto.cs",
+              "DocumentMoniker": "C:\\Trabalho\\Korp_Teste_AntonioHenrique\\NotasFiscais\\Estoque.API\\Models\\Produto.cs",
+              "RelativeDocumentMoniker": "Estoque.API\\Models\\Produto.cs",
+              "ToolTip": "C:\\Trabalho\\Korp_Teste_AntonioHenrique\\NotasFiscais\\Estoque.API\\Models\\Produto.cs",
+              "RelativeToolTip": "Estoque.API\\Models\\Produto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T16:53:44.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProdutosDTO.cs",
+              "DocumentMoniker": "C:\\Trabalho\\Korp_Teste_AntonioHenrique\\NotasFiscais\\Estoque.API\\DTOs\\ProdutosDTO.cs",
+              "RelativeDocumentMoniker": "Estoque.API\\DTOs\\ProdutosDTO.cs",
+              "ToolTip": "C:\\Trabalho\\Korp_Teste_AntonioHenrique\\NotasFiscais\\Estoque.API\\DTOs\\ProdutosDTO.cs",
+              "RelativeToolTip": "Estoque.API\\DTOs\\ProdutosDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T16:53:15.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Trabalho\\Korp_Teste_AntonioHenrique\\NotasFiscais\\Estoque.API\\Program.cs",
+              "RelativeDocumentMoniker": "Estoque.API\\Program.cs",
+              "ToolTip": "C:\\Trabalho\\Korp_Teste_AntonioHenrique\\NotasFiscais\\Estoque.API\\Program.cs",
+              "RelativeToolTip": "Estoque.API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T06:17:00.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Trabalho\\Korp_Teste_AntonioHenrique\\NotasFiscais\\Faturamento.API\\Program.cs",
+              "RelativeDocumentMoniker": "Faturamento.API\\Program.cs",
+              "ToolTip": "C:\\Trabalho\\Korp_Teste_AntonioHenrique\\NotasFiscais\\Faturamento.API\\Program.cs",
+              "RelativeToolTip": "Faturamento.API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T06:15:27.753Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Trabalho\\Korp_Teste_AntonioHenrique\\NotasFiscais\\Faturamento.API\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Faturamento.API\\Data\\AppDbContext.cs",
               "ToolTip": "C:\\Trabalho\\Korp_Teste_AntonioHenrique\\NotasFiscais\\Faturamento.API\\Data\\AppDbContext.cs",
               "RelativeToolTip": "Faturamento.API\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-02T06:11:05.336Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "NotaFiscal.cs",
               "DocumentMoniker": "C:\\Trabalho\\Korp_Teste_AntonioHenrique\\NotasFiscais\\Faturamento.API\\Models\\NotaFiscal.cs",
               "RelativeDocumentMoniker": "Faturamento.API\\Models\\NotaFiscal.cs",
               "ToolTip": "C:\\Trabalho\\Korp_Teste_AntonioHenrique\\NotasFiscais\\Faturamento.API\\Models\\NotaFiscal.cs",
               "RelativeToolTip": "Faturamento.API\\Models\\NotaFiscal.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAQwBAAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBAAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-02T06:09:48.486Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "NotaFiscalDTO.cs",
               "DocumentMoniker": "C:\\Trabalho\\Korp_Teste_AntonioHenrique\\NotasFiscais\\Faturamento.API\\DTOs\\NotaFiscalDTO.cs",
               "RelativeDocumentMoniker": "Faturamento.API\\DTOs\\NotaFiscalDTO.cs",
               "ToolTip": "C:\\Trabalho\\Korp_Teste_AntonioHenrique\\NotasFiscais\\Faturamento.API\\DTOs\\NotaFiscalDTO.cs",
               "RelativeToolTip": "Faturamento.API\\DTOs\\NotaFiscalDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-02T06:10:17.738Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "NotaFiscalService.cs",
               "DocumentMoniker": "C:\\Trabalho\\Korp_Teste_AntonioHenrique\\NotasFiscais\\Faturamento.API\\Services\\NotaFiscalService.cs",
               "RelativeDocumentMoniker": "Faturamento.API\\Services\\NotaFiscalService.cs",
               "ToolTip": "C:\\Trabalho\\Korp_Teste_AntonioHenrique\\NotasFiscais\\Faturamento.API\\Services\\NotaFiscalService.cs",
               "RelativeToolTip": "Faturamento.API\\Services\\NotaFiscalService.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAkwEgAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBcAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-02T06:07:40.079Z",
               "EditorCaption": ""
