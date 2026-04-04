@@ -1,4 +1,5 @@
 using Faturamento.API.DTOs;
+using Faturamento.API.Models;
 using Faturamento.API.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -28,6 +29,13 @@ namespace Faturamento.API.Controllers
       var nota = await _service.BuscarPorIdAsync(id);
       if (nota is null) return NotFound();
       return Ok(nota);
+    }
+
+    [HttpGet("status/{status}")]
+    public async Task<IActionResult> BuscarPorStatus(StatusNota status)
+    {
+      var notas = await _service.BuscarPorStatusAsync(status);
+      return Ok(notas);
     }
 
     [HttpPost]

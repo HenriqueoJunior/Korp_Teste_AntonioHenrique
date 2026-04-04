@@ -34,6 +34,15 @@ namespace Faturamento.API.Services
           .FirstOrDefaultAsync(n => n.Id == id);
     }
 
+    public async Task<IEnumerable<NotaFiscal>> BuscarPorStatusAsync(StatusNota status)
+    {
+      return await _context.NotasFiscais
+          .Include(n => n.Itens)
+          .Where(n => n.Status == status)
+          .OrderByDescending(n => n.Numero)
+          .ToListAsync();
+    }
+
     public async Task<NotaFiscal> CriarAsync(CriarNotaDTO dto)
     {
       var ultimoNumero = await _context.NotasFiscais

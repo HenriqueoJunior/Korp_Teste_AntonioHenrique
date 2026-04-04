@@ -7,8 +7,10 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { NotaFiscalService } from '../../../services/nota-fiscal';
 import { NotaFiscal } from '../../../models/nota-fiscal';
+import { Subject, switchMap, startWith } from 'rxjs';
 
 @Component({
   selector: 'app-lista-notas',
@@ -20,7 +22,8 @@ import { NotaFiscal } from '../../../models/nota-fiscal';
     MatIconModule,
     MatChipsModule,
     MatProgressSpinnerModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatButtonToggleModule
   ],
   templateUrl: './lista-notas.html',
   styleUrl: './lista-notas.scss'
@@ -28,7 +31,10 @@ import { NotaFiscal } from '../../../models/nota-fiscal';
 export class ListaNotas implements OnInit {
   notas = signal<NotaFiscal[]>([]);
   carregando = signal(true);
+  filtroAtual = signal<string>('todos');
   colunas = ['numero', 'status', 'itens', 'dataCriacao', 'acoes'];
+
+  private filtro$ = new Subject<string>();
 
   constructor(
     private notaFiscalService: NotaFiscalService,
@@ -36,12 +42,15 @@ export class ListaNotas implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.carregar();
-  }
-
-  carregar(): void {
-    this.carregando.set(true);
-    this.notaFiscalService.listar().subscribe({
+    this.filtro$.pipe(
+      startWith('todos'),
+      switchMap(filtro => {
+        this.carregando.set(true);
+        if (filtro === 'Aberta') return this.notaFiscalService.buscarPorStatus('Aberta');
+        if (filtro === 'Fechada') return this.notaFiscalService.buscarPorStatus('Fechada');
+        return this.notaFiscalService.listar();
+      })
+    ).subscribe({
       next: (dados) => {
         this.notas.set(dados);
         this.carregando.set(false);
@@ -51,5 +60,10 @@ export class ListaNotas implements OnInit {
         this.carregando.set(false);
       }
     });
+  }
+
+  filtrar(valor: string): void {
+    this.filtroAtual.set(valor);
+    this.filtro$.next(valor);
   }
 }

@@ -56,5 +56,21 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Faturamento.API.Controllers.NotasFiscaisController",
+    "Method": "BuscarPorStatus",
+    "RelativePath": "api/notas-fiscais/status/{status}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "status",
+        "Type": "Faturamento.API.Models.StatusNota",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

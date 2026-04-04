@@ -78,6 +78,28 @@
         }
       }
     },
+    "/api/notas-fiscais/status/{status}": {
+      "get": {
+        "tags": [
+          "NotasFiscais"
+        ],
+        "parameters": [
+          {
+            "name": "status",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "$ref": "#/components/schemas/StatusNota"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/notas-fiscais/{id}/imprimir": {
       "post": {
         "tags": [
@@ -131,6 +153,9 @@
             "format": "int32"
           }
         }
+      },
+      "StatusNota": {
+        "type": "integer"
       }
     }
   },

@@ -7,6 +7,7 @@ namespace Faturamento.API.Services
   {
     Task<IEnumerable<NotaFiscal>> ListarAsync();
     Task<NotaFiscal?> BuscarPorIdAsync(Guid id);
+    Task<IEnumerable<NotaFiscal>> BuscarPorStatusAsync(StatusNota status);
     Task<NotaFiscal> CriarAsync(CriarNotaDTO dto);
     Task<(NotaFiscal? nota, string? erro)> ImprimirAsync(Guid id);
   }
