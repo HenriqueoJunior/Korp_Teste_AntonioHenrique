@@ -56,7 +56,7 @@ export class DetalheNota implements OnInit {
     });
   }
 
-  imprimir(): void {
+ imprimir(): void {
     const nota = this.nota();
     if (!nota || nota.status !== 'Aberta') return;
 
@@ -67,8 +67,9 @@ export class DetalheNota implements OnInit {
         this.imprimindo.set(false);
         this.snackBar.open('Nota fiscal impressa com sucesso!', 'Fechar', { duration: 3000 });
       },
-      error: () => {
-        this.snackBar.open('Erro ao imprimir nota. Verifique se o serviço de estoque está disponível.', 'Fechar', { duration: 4000 });
+      error: (err) => {
+        const mensagem = err?.error?.erro ?? 'Erro ao imprimir nota. Verifique se o serviço de estoque está disponível.';
+        this.snackBar.open(mensagem, 'Fechar', { duration: 5000 });
         this.imprimindo.set(false);
       }
     });

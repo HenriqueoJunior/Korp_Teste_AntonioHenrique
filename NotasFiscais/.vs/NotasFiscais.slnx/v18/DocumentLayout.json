@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Trabalho\\Korp_Teste_AntonioHenrique\\NotasFiscais\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F5471D68-728C-61E2-BB8D-03AAB592409C}|Faturamento.API\\Faturamento.API.csproj|c:\\trabalho\\korp_teste_antoniohenrique\\notasfiscais\\faturamento.api\\models\\notafiscal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5471D68-728C-61E2-BB8D-03AAB592409C}|Faturamento.API\\Faturamento.API.csproj|solutionrelative:faturamento.api\\models\\notafiscal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F5471D68-728C-61E2-BB8D-03AAB592409C}|Faturamento.API\\Faturamento.API.csproj|c:\\trabalho\\korp_teste_antoniohenrique\\notasfiscais\\faturamento.api\\services\\notafiscalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5471D68-728C-61E2-BB8D-03AAB592409C}|Faturamento.API\\Faturamento.API.csproj|solutionrelative:faturamento.api\\services\\notafiscalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F5471D68-728C-61E2-BB8D-03AAB592409C}|Faturamento.API\\Faturamento.API.csproj|c:\\trabalho\\korp_teste_antoniohenrique\\notasfiscais\\faturamento.api\\dtos\\notafiscaldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F5471D68-728C-61E2-BB8D-03AAB592409C}|Faturamento.API\\Faturamento.API.csproj|solutionrelative:faturamento.api\\dtos\\notafiscaldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33E53E52-87B2-567D-7E78-06C6FB4BABB3}|Estoque.API\\Estoque.API.csproj|c:\\trabalho\\korp_teste_antoniohenrique\\notasfiscais\\estoque.api\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33E53E52-87B2-567D-7E78-06C6FB4BABB3}|Estoque.API\\Estoque.API.csproj|solutionrelative:estoque.api\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5471D68-728C-61E2-BB8D-03AAB592409C}|Faturamento.API\\Faturamento.API.csproj|c:\\trabalho\\korp_teste_antoniohenrique\\notasfiscais\\faturamento.api\\models\\notafiscal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5471D68-728C-61E2-BB8D-03AAB592409C}|Faturamento.API\\Faturamento.API.csproj|solutionrelative:faturamento.api\\models\\notafiscal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F5471D68-728C-61E2-BB8D-03AAB592409C}|Faturamento.API\\Faturamento.API.csproj|c:\\trabalho\\korp_teste_antoniohenrique\\notasfiscais\\faturamento.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -25,14 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{F5471D68-728C-61E2-BB8D-03AAB592409C}|Faturamento.API\\Faturamento.API.csproj|c:\\trabalho\\korp_teste_antoniohenrique\\notasfiscais\\faturamento.api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F5471D68-728C-61E2-BB8D-03AAB592409C}|Faturamento.API\\Faturamento.API.csproj|solutionrelative:faturamento.api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F5471D68-728C-61E2-BB8D-03AAB592409C}|Faturamento.API\\Faturamento.API.csproj|c:\\trabalho\\korp_teste_antoniohenrique\\notasfiscais\\faturamento.api\\services\\notafiscalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5471D68-728C-61E2-BB8D-03AAB592409C}|Faturamento.API\\Faturamento.API.csproj|solutionrelative:faturamento.api\\services\\notafiscalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33E53E52-87B2-567D-7E78-06C6FB4BABB3}|Estoque.API\\Estoque.API.csproj|c:\\trabalho\\korp_teste_antoniohenrique\\notasfiscais\\estoque.api\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33E53E52-87B2-567D-7E78-06C6FB4BABB3}|Estoque.API\\Estoque.API.csproj|solutionrelative:estoque.api\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,11 +42,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "Produto.cs",
               "DocumentMoniker": "C:\\Trabalho\\Korp_Teste_AntonioHenrique\\NotasFiscais\\Estoque.API\\Models\\Produto.cs",
               "RelativeDocumentMoniker": "Estoque.API\\Models\\Produto.cs",
@@ -59,7 +59,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "ProdutosDTO.cs",
               "DocumentMoniker": "C:\\Trabalho\\Korp_Teste_AntonioHenrique\\NotasFiscais\\Estoque.API\\DTOs\\ProdutosDTO.cs",
               "RelativeDocumentMoniker": "Estoque.API\\DTOs\\ProdutosDTO.cs",
@@ -72,7 +72,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Trabalho\\Korp_Teste_AntonioHenrique\\NotasFiscais\\Estoque.API\\Program.cs",
               "RelativeDocumentMoniker": "Estoque.API\\Program.cs",
@@ -85,7 +85,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Trabalho\\Korp_Teste_AntonioHenrique\\NotasFiscais\\Faturamento.API\\Program.cs",
               "RelativeDocumentMoniker": "Faturamento.API\\Program.cs",
@@ -98,7 +98,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Trabalho\\Korp_Teste_AntonioHenrique\\NotasFiscais\\Faturamento.API\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Faturamento.API\\Data\\AppDbContext.cs",
@@ -111,7 +111,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "NotaFiscal.cs",
               "DocumentMoniker": "C:\\Trabalho\\Korp_Teste_AntonioHenrique\\NotasFiscais\\Faturamento.API\\Models\\NotaFiscal.cs",
               "RelativeDocumentMoniker": "Faturamento.API\\Models\\NotaFiscal.cs",
@@ -137,13 +137,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "NotaFiscalService.cs",
               "DocumentMoniker": "C:\\Trabalho\\Korp_Teste_AntonioHenrique\\NotasFiscais\\Faturamento.API\\Services\\NotaFiscalService.cs",
               "RelativeDocumentMoniker": "Faturamento.API\\Services\\NotaFiscalService.cs",
               "ToolTip": "C:\\Trabalho\\Korp_Teste_AntonioHenrique\\NotasFiscais\\Faturamento.API\\Services\\NotaFiscalService.cs",
               "RelativeToolTip": "Faturamento.API\\Services\\NotaFiscalService.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBcAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-02T06:07:40.079Z",
               "EditorCaption": ""
