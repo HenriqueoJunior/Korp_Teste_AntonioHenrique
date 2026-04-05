@@ -3,10 +3,10 @@
     <button mat-icon-button (click)="voltar()">
       <mat-icon>arrow_back</mat-icon>
     </button>
-    <h2 style="margin: 0;">{{ editando ? 'Editar Produto' : 'Novo Produto' }}</h2>
+    <h2 style="margin: 0;">{{ editando() ? 'Editar Produto' : 'Novo Produto' }}</h2>
   </div>
 
-  @if (carregando) {
+  @if (carregando()) {
     <div style="display: flex; justify-content: center; padding: 48px;">
       <mat-spinner />
     </div>
@@ -41,8 +41,8 @@
         <button mat-stroked-button (click)="voltar()">Cancelar</button>
         <button mat-raised-button color="primary"
                 (click)="salvar()"
-                [disabled]="form.invalid || salvando">
-          @if (salvando) {
+                [disabled]="form.invalid || salvando()">
+          @if (salvando()) {
             <mat-spinner diameter="20" />
           } @else {
             Salvar

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, signal } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { CommonModule } from '@angular/common';
@@ -27,9 +27,9 @@ import { ProdutoService } from '../../../services/produto';
 })
 export class FormProduto implements OnInit {
   form: FormGroup;
-  carregando = false;
-  salvando = false;
-  editando = false;
+  carregando = signal(false);
+  salvando = signal(false);
+  editando = signal(false);
   produtoId: string | null = null;
 
   constructor(
@@ -48,14 +48,14 @@ export class FormProduto implements OnInit {
 
   ngOnInit(): void {
     this.produtoId = this.route.snapshot.paramMap.get('id');
-    this.editando = !!this.produtoId;
+    this.editando.set(!!this.produtoId);
 
-    if (this.editando && this.produtoId) {
-      this.carregando = true;
+    if (this.editando() && this.produtoId) {
+      this.carregando.set(true);
       this.produtoService.buscarPorId(this.produtoId).subscribe({
         next: (produto) => {
           this.form.patchValue(produto);
-          this.carregando = false;
+          this.carregando.set(false);
         },
         error: () => {
           this.snackBar.open('Erro ao carregar produto.', 'Fechar', { duration: 3000 });
@@ -68,17 +68,17 @@ export class FormProduto implements OnInit {
   salvar(): void {
     if (this.form.invalid) return;
 
-    this.salvando = true;
+    this.salvando.set(true);
     const dto = this.form.value;
 
-    const operacao = this.editando && this.produtoId
+    const operacao = this.editando() && this.produtoId
       ? this.produtoService.atualizar(this.produtoId, dto)
       : this.produtoService.criar(dto);
 
     operacao.subscribe({
       next: () => {
         this.snackBar.open(
-          this.editando ? 'Produto atualizado!' : 'Produto criado!',
+          this.editando() ? 'Produto atualizado!' : 'Produto criado!',
           'Fechar',
           { duration: 3000 }
         );
@@ -86,7 +86,7 @@ export class FormProduto implements OnInit {
       },
       error: () => {
         this.snackBar.open('Erro ao salvar produto.', 'Fechar', { duration: 3000 });
-        this.salvando = false;
+        this.salvando.set(false);
       }
     });
   }
