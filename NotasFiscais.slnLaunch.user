@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Novo Perfil",
+    "Projects": [
+      {
+        "Path": "Estoque.API\\Estoque.API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Faturamento.API\\Faturamento.API.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

@@ -1,0 +1,167 @@
+{
+  "openapi": "3.1.1",
+  "info": {
+    "title": "Faturamento.API | v1",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://localhost:7002"
+    },
+    {
+      "url": "http://localhost:5002"
+    }
+  ],
+  "paths": {
+    "/api/notas-fiscais": {
+      "get": {
+        "tags": [
+          "NotasFiscais"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NotasFiscais"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CriarNotaDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CriarNotaDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CriarNotaDTO"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/notas-fiscais/{id}": {
+      "get": {
+        "tags": [
+          "NotasFiscais"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/notas-fiscais/status/{status}": {
+      "get": {
+        "tags": [
+          "NotasFiscais"
+        ],
+        "parameters": [
+          {
+            "name": "status",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "$ref": "#/components/schemas/StatusNota"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/notas-fiscais/{id}/imprimir": {
+      "post": {
+        "tags": [
+          "NotasFiscais"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "CriarNotaDTO": {
+        "type": "object",
+        "properties": {
+          "itens": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ItemNotaDTO"
+            }
+          }
+        }
+      },
+      "ItemNotaDTO": {
+        "type": "object",
+        "properties": {
+          "produtoId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "quantidade": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          }
+        }
+      },
+      "StatusNota": {
+        "type": "integer"
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "NotasFiscais"
+    }
+  ]
+}
